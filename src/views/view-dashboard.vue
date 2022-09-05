@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import { RiskMatrix } from "@/VuetifyRiskVis";
+import RiskMatrix from "@/components/RiskMatrix";
 
 export default {
   components: {

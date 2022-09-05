@@ -1,11 +1,16 @@
 {
   "name": "vuetify-riskvis",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": {
+    "name": "Tadek Calanca",
+    "email": "tcalanca@gmail.com"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-library" : "vue-cli-service build --target lib --name vuetify-riskvis ./src/install.js"
   },
   "dependencies": {
     "core-js": "^3.8.3",
@@ -28,6 +33,7 @@
     "vue-template-compiler": "^2.6.14",
     "vuetify-loader": "^1.7.0"
   },
+  "files": ["dist/*"],
   "eslintConfig": {
     "root": true,
     "env": {
@@ -47,13 +53,12 @@
     "last 2 versions",
     "not dead"
   ],
-  "description": "## Project setup ``` yarn install ```",
-  "main": "babel.config.js",
+  "description": "Vuetify Risk Matrix",
+  "main": "dist/vuetify-riskvis.common.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tc9x9/vuetify-riskvis.git"
   },
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/tc9x9/vuetify-riskvis/issues"
